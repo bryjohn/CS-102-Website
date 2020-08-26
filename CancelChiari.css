@@ -1,0 +1,295 @@
+*      { box-sizing: border-box;}
+
+body   {
+    margin: 0;
+    background-color:  plum;
+    color: floralwhite;
+    font-family:Verdana,Arial,sans-serif}
+
+header {
+    background-color: purple;
+    height: 275px;
+    background-repeat: no-repeat;
+    text-align: center; 
+    text-align-last: center;
+    
+}
+
+#home{
+    background-image: url(home.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    height: 350px;
+    margin-left: 0;
+    margin-right:0;
+}
+
+#education{
+    background-image: url(education.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    height: 350px;
+    margin-left: 0;
+    margin-right:0;
+}
+#support{
+    background-image: url(support.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    height: 350px;
+    margin-left: 0;
+    margin-right:0;
+}
+#donate{
+    background-image: url(donate.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    height: 350px;
+    margin-left: 0;
+    margin-right:0;
+}
+#volunteer{
+    background-image: url(volunteer.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    height: 350px;
+    margin-left: 0;
+    margin-right:0;
+}
+
+h1     {
+    font-size: 3em;
+    padding-top: 20px;
+}
+#wrapper{
+    display:flex;
+}
+.inner{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.left{
+    float left:
+}
+.right{
+    float right;
+}
+
+#title h2{
+  overflow:hidden;
+}
+#title h2:after{
+  content:'';
+  display:inline-block;
+  width:100%; height:100%;
+  margin-right:-100%;
+  border-top: 2px solid purple;
+}
+
+
+nav    { 
+    background-color: purple;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,1);
+    
+    
+}
+
+
+nav a{text-decoration: none;}
+nav a:link{color: plum}
+nav a:visited{color: plum}
+nav a:hover{
+    color: purple;
+    background: plum;
+}
+a{text-decoration: none}
+a:link{color: purple}
+a:visited{color: purple}
+
+
+main{
+    display: block;
+}
+div {
+    color: purple;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+div a {
+    text-decoration: none;
+    font-weight: bold;
+
+}
+ #mission{
+     
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+    background-color: plum;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+     
+}
+
+
+.center{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+#about{
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#symptoms{
+    height: auto;
+    margin-bottom: 11%;
+}
+#treatment{
+    height: auto;
+    margin-bottom: 5%;
+}
+.recomend{
+    
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+    background-color: plum;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+form {
+    padding: 2em;
+}
+label{
+    float: left;
+    display: block;
+    text-align: right ;
+    width: 15em;
+    padding-right: 1em;
+}
+input {
+    display: block;
+    margin-bottom: 1em;
+}
+
+img {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+footer {
+    background-color: purple;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;}
+#info{
+    text-align: left;
+    width: 25%;
+}
+
+table{
+    align-self: center;
+    border-collapse: collapse;
+    border-color: purple;
+    
+}
+table a{ text-decoration: none;}
+table a:link{
+    color: purple;
+    
+    
+}
+table a:visited{color: purple}
+
+caption{
+    background-color: purple;
+    color: white;
+    
+}
+td{
+    
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    color: purple;
+}
+h2 span{
+    content:"";
+    flex: 1 1 auto;
+    border-top: 1px soild yellow;
+}
+
+.desktop{}
+.mobile{display: none}
+@media only screen and (max-width:1024px){
+   
+    #home, #education, #support, #donate, #volunteer{
+        height: 200px;     
+    }
+    header img {
+        width: 30%;
+    }
+    .recomend{
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-right: none;
+    }
+ 
+}
+@media only screen and (max-width: 500px) {
+    header h1{
+        padding: 8%;
+    }
+    img{
+        display: none;
+    }
+    header{
+        margin-top: 10%;
+    }
+    #mission{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .recomend{
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-right: none;
+    }
+    #wrapper{
+        display: block;
+    }
+
+    .inner{
+        width: 50%
+    }
+    .mobile{display: contents}
+    #home, #education, #support, #donate, #volunteer,.desktop{display: none}
+   
+    label{
+        width: 10em;
+    }
+}
